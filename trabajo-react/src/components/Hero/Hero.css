@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url("/src/media/ImagenEnHero.jpg") center/cover no-repeat;
+}
+
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* esto mueve el bloque hacia la derecha */
+}
+
+.hero__card {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin-right: -20%; /* distancia al borde derecho. Define una linea vertical a la derecha del centro y usa valores en porcentaje para ello. 
+  Nosotros hemos puesto hasta negativo*/
+  padding: 50px 60px;
+  border-radius: 18px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero__title {
+  font-size: 56px;
+  line-height: 1.05;
+  margin: 0 0 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.hero__desc {
+  color: #374151;
+  max-width: 520px;
+  margin: 0 0 28px;
+  font-size: 18px;
+}
+
+.hero__form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

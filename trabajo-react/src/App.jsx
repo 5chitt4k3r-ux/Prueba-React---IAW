@@ -1,27 +1,11 @@
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 
-function App() {
-  return (
-    
-    <div className="font-sans antialiased text-gray-900"> {/* esto es para la letra de */}
-      
-
-      <Hero />
-      
-     
-      <Footer />
-      
-    </div>
-function App() {
-
+export default function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <InfoSection></InfoSection>
-      
+      <Header />
+      <Hero />
     </>
   );
 }
-
-export default App;
