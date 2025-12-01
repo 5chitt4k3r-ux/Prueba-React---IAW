@@ -19,8 +19,7 @@
 .hero__card {
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 600px;
-  margin-right: -20%; /* distancia al borde derecho. Define una linea vertical a la derecha del centro y usa valores en porcentaje para ello. 
-  Nosotros hemos puesto hasta negativo*/
+  margin-right: 5%; /* distancia al borde derecho. Define una linea vertical a la derecha del centro y usa valores en porcentaje para ello. */
   padding: 50px 60px;
   border-radius: 18px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
@@ -45,4 +44,12 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.hero-container {
+  width: 100%;       /* Ocupa todo el ancho disponible */
+  height: auto;      /* O una altura fija si prefieres, ej: 500px */
+  background-size: cover; /* Para que la imagen cubra todo sin deformarse */
+  background-position: center;
+  position: relative;
 }

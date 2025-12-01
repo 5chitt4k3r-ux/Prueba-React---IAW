@@ -1,21 +1,38 @@
-:root{
-  --green:#00a651;
-  --text:#0f172a;
-  --muted:#6b7280;
-  --bg:#fff;
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+
+/* Resto de tu CSS... */
+* {
+  box-sizing: border-box;
+  /* ... */
 }
-*{box-sizing:border-box}
-html,body,#root{height:100%}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg)}
-a{color:inherit;text-decoration:none}
-.container{max-width:1200px;margin:0 auto;padding:0 20px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  height:48px;padding:0 22px;border-radius:12px;border:none;
-  background:var(--green);color:white;font-weight:700;cursor:pointer;
+/* 1. Reset global: quita espacios y bordes extraños a TODO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.btn:active{transform:translateY(1px)}
-.input{
-  height:48px;border:1px solid #e5e7eb;border-radius:12px;
-  padding:0 14px;font-size:16px;min-width:280px;
+
+/* 2. Asegura que el cuerpo ocupe toda la pantalla */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita scroll lateral indeseado */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Fuente estándar */
+  line-height: 1.5;
+}
+
+/* 3. ARREGLO DE ENLACES: Esto quita el subrayado que te ha salido */
+a {
+  text-decoration: none; /* Adiós subrayado */
+  color: inherit; /* Que use el color del texto normal, no el azul de internet */
+}
+
+a:hover {
+  text-decoration: none; /* Asegura que no salga al pasar el ratón */
+}
+
+/* 4. Quita los puntos de las listas (ul/li) por si acaso */
+ul, li {
+  list-style: none;
 }
