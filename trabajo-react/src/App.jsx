@@ -4,23 +4,41 @@ import Section from './components/Section/Section';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-// --- CORRECCIÓN AQUÍ ---
 import cajeraImg from './media/Cajera.jpeg'; 
-// Si tienes la otra imagen también en media:
-// import imagenHeader from './media/ImagenHeader.jpg';
+import fruteroImg from './media/frutero.jpeg'; 
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Hero />
-      <Section>
-        title="Atención al cliente" 
-        text="Nuestro equipo está siempre disponible para ayudarte." 
+      
+      {/* SECCIÓN 1: Estilo Estándar (Fondo blanco, letra oscura) */}
+      <Section 
+        title="Compra online" 
+        text="Recibe tu pedido en casa con la misma calidad y frescura de siempre." 
         imageSrc={cajeraImg}
+        inverted={false}
+        // Puedes personalizarlo ligeramente si quieres:
+        titleColor="#1a472a" // Un verde oscuro
+      />
+
+      {/* SECCIÓN 2*/}
+      <Section 
+        title="Nueva tienda online en algunas zonas" 
+        text="Por el momento, la nueva app 
+        y web está disponible en Valencia, Barcelona, Madrid y otras poblaciones
+        . Introduce tu código postal arriba para ver si repartimos en tu zona. Si aún no llegamos, ¡apúntate y te avisamos!" 
+        imageSrc={fruteroImg} 
         inverted={true}
-      </Section>
-      <Footer></Footer>
+        //  el color del section 2 
+        backgroundColor="#fffef9" //fondo ligeramente distinto como la pagina origianl
+        titleColor="#000000ff"      
+        textColor="#000000ff"       
+              
+      />
+
+      <Footer />
     </div>
   );
 }

@@ -53,3 +53,32 @@
   background-position: center;
   position: relative;
 }
+
+/* --- RESPONSIVE PARA EL HERO --- */
+@media (max-width: 768px) {
+  .hero {
+    /* Centramos la imagen de fondo */
+    background-position: 65% center; 
+    justify-content: center; /* Centramos el contenido horizontalmente */
+  }
+
+  .hero__content {
+    justify-content: center; /* Quitamos el alineado a la derecha */
+  }
+
+  .hero__card {
+    margin-right: 0; /* Quitamos el margen derecho */
+    width: 90%; /* Que ocupe casi toda la pantalla */
+    max-width: none;
+    padding: 2rem; /* Un poco menos de espacio dentro */
+    text-align: center; /* Texto centrado queda mejor en móvil */
+  }
+
+  .hero__title {
+    font-size: 2.5rem; /* Título más pequeño para que quepa */
+  }
+
+  .hero__form {
+    justify-content: center; /* Centrar el input y el botón */
+  }
+}
