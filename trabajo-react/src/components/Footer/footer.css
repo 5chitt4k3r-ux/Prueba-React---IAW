@@ -15,3 +15,32 @@
     flex-direction: column;
     margin-right: 40px;
 }
+
+.footer-v2 {
+    background-color: #1c3037;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    padding: 0 32px;
+    font-size: 20px;
+    /* flex-flow: column; */
+
+    .copyright {
+        margin: 40px 0;
+        font-size: 18px;
+        font-family: Muli;
+    }
+
+    .legal {
+        margin: 0;
+        list-style: none;
+        padding: 40px 0;
+        display: flex;
+        border-bottom: 1px solid;
+        flex-direction: column;
+
+        li {
+            margin-bottom: 32px;
+        }
+    }
+}

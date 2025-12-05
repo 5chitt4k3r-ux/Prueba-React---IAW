@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Section from './components/Section/Section';
 import Footer from './components/Footer/Footer';
+import EndBody from './components/endBody';
 import './App.css';
 
 // --- CORRECCIÓN AQUÍ ---
@@ -20,6 +21,7 @@ function App() {
         imageSrc={cajeraImg}
         inverted={true}
       </Section>
+      <EndBody />
       <Footer></Footer>
     </div>
   );

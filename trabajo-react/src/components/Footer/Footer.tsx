@@ -73,8 +73,8 @@ function footer() {
             </section>
              
             <section className="footer-v2">
-                <p>© Mercadona S.A. A46103834. Todos los derechos reservados.</p>
-                <ul>
+                <p className="copyright">© Mercadona S.A. A46103834. Todos los derechos reservados.</p>
+                <ul className="legal">
                     <li>Accesibilidad</li>
                     <li>Politicas de privacidad</li>
                     <li>Politicas de cookies</li>

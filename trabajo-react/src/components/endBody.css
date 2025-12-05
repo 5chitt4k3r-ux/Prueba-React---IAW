@@ -1,0 +1,110 @@
+.download-app {
+  background-color: #f3f2ee;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.postal-code {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;    
+}
+
+.input-text {
+  background-color: var(--white);
+  height: 56px;
+  font-family: Muli;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: 0px 4px 20px 0px rgba(59, 57, 55, 0.08);
+
+    input {
+        padding: 18px 30px 5px 20px;
+        height: 100%;
+        border: none;
+    }
+}
+
+.input-text-label {
+  padding: 20px 15px 0 0;
+  font-size: 1rem;
+  left: 20px;
+}
+
+.postal-code-button {
+  height: 56px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: green;
+  color: white;
+  border: 0;
+  box-shadow: 0px 4px 20px 0px rgba(59, 57, 55, 0.2);
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Avenir-Black', 'Arial';
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+.download-app-title {
+  color: var(--black);
+  font-family: var(--primary-font);
+  font-size: 2.3rem;
+  max-width: 405px;
+  margin: 0 0 1.5rem 0;
+}
+
+.download-app-msj {
+  color: var(--smoked-70);
+  font-size: 1rem;
+  font-family: Muli;
+  line-height: 1.5em;
+  max-width: 350px;
+  padding: 0 0 1rem 0;
+  margin: 0;
+}
+
+.download-google-play,
+.download-app-store {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .download-app {
+    height: 393px;
+    background-image: url('../media/download-app.abc76c1e0d12c1a6a103.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 45vw;
+  }
+
+  .download-google-play,
+  .download-app-store {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-app {
+    padding: 3rem 10%;
+    background-position: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app {
+    background-position: right;
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .download-app {
+    padding: 3rem 15%;
+  }
+}
