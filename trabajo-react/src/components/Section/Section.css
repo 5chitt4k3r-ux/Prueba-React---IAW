@@ -1,76 +1,67 @@
-/* src/components/Section/Section.css */
-
-.section {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+.section-wrapper {
+  width: 100%;
+  padding: 4rem 0; /* ESTO ES EL ESPACING: 4rem arriba y abajo rellenos de color */
   display: flex;
-  
-  /* Centrado y ancho limitado (lo que hicimos antes) */
-  width: 90%;
-  max-width: 1200px;
-  margin: 4rem auto; 
-  
-  /* Altura y bordes */
-  min-height: 450px; /* Importante para que la imagen tenga alto */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  background-color: #fff;
+  justify-content: center; /* Centra la tarjeta interior */
 }
 
-/* --- ESTILOS DE LA IMAGEN (Aquí estaba el fallo probablemente) --- */
-.section__image {
-  flex: 1; /* Ocupa el 50% */
-  width: 50%; /* Refuerzo para asegurar ancho */
+/* LA TARJETA INTERIOR: Mantiene el ancho limitado y el diseño de "caja" */
+.section {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  /* Ya no usamos margin aquí, el espacio lo da el wrapper */
+  margin: 0; 
   
-  /* Propiedades de fondo */
+  min-height: 450px;
+  border-radius: 8px; /* Bordes redondeados de la tarjeta */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background-color: #fff; /* La tarjeta siempre es blanca por dentro */
+}
+
+/* --- Resto de estilos igual que antes --- */
+.section__image {
+  flex: 1;
+  width: 50%;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
-  
-  /* Color de fondo por si falla la carga de la imagen */
   background-color: #ddd; 
 }
 
-/* --- ESTILOS DEL CONTENIDO --- */
 .section__content {
-  flex: 1; /* Ocupa el otro 50% */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5rem 3rem; 
+  /* background-color: #fff; <-- Ya lo hereda del padre .section */
 }
 
-.section__content h2 { /*Letra principal del section*/
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #000000;
-  font-family: 'Merriweather', serif;
-  font-weight: 900;
-  letter-spacing: -1px;
-}
-
-.section__content p {
-  font-size: 1.1rem;
-  color: #000000;
-  line-height: 1.6;
-}
-
-/* --- INVERTIR ORDEN --- */
 .section--inverted {
   flex-direction: row-reverse;
 }
 
-/* --- MÓVIL --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-  .section {
-    flex-direction: column-reverse; /* Imagen arriba */
+  .section-wrapper {
+    padding: 2rem 0; /* Menos espacio vertical en móvil */
+  }
+  
+  .section, .section--inverted {
+    flex-direction: column-reverse;
     height: auto;
     width: 95%;
   }
-  .section--inverted {
-    flex-direction: column-reverse;
-  }
+  
   .section__image {
     width: 100%;
-    min-height: 250px; /* Altura mínima obligatoria en móvil */
+    min-height: 250px;
+  }
+  
+  .section__content {
+    padding: 2rem 1.5rem;
   }
 }

@@ -43,4 +43,23 @@
             margin-bottom: 32px;
         }
     }
+/* --- RESPONSIVE PARA EL FOOTER --- */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Una columna debajo de otra */
+    padding: 20px;
+  }
+
+  .footer-link-section {
+    margin-right: 0;
+    margin-bottom: 30px; /* Separación entre bloques */
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* Una líneita separadora fina */
+    padding-bottom: 10px;
+  }
+  
+  /* Quitar borde al último elemento */
+  .footer-link-section:last-child {
+    border-bottom: none;
+  }
 }
